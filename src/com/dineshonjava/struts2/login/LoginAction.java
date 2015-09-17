@@ -8,13 +8,14 @@ import com.opensymphony.xwork2.ActionSupport;
  */  
 @SuppressWarnings("serial")  
 public class LoginAction  extends ActionSupport{  
- private String username;  
-    private String password;  
+	private String devOS;  
+    private String devOSVersion; 
+    private String devNotes;
       
  public String execute() {  
      
-        if (this.username.equals("dinesh")   
-                && this.password.equals("sweety")) {  
+        if (this.devOS.equals("Mac OS X")   
+                && this.devOSVersion.equals("10.8")) {  
             return "success";  
         } else {  
          addActionError(getText("error.login"));  
@@ -22,20 +23,29 @@ public class LoginAction  extends ActionSupport{
         }  
     }  
   
- public String getUsername() {  
-  return username;  
+ public String getDevOS() {  
+  return devOS ;  
  }  
   
- public void setUsername(String username) {  
-  this.username = username;  
+ public void setDevOS(String devOS) {  
+  this.devOS = devOS;  
  }  
   
- public String getPassword() {  
-  return password;  
+ public String getDevOSVersion() {  
+  return devOSVersion;  
  }  
   
- public void setPassword(String password) {  
-  this.password = password;  
+ public void setDevOSVersion(String devOSVersion) {  
+  this.devOSVersion = devOSVersion;  
  }  
+ 
+ public String getDevNotes() {  
+	 return devNotes ;  
+ } 
+ 
+ public void setDevNotes(String devNotes) {  
+	 this.devNotes = devNotes;  
+ }  
+ 
    
 } 

@@ -8,11 +8,12 @@
 <title>Struts 2 - Development Environments App | Jeanette Fairless</title>  
 </head>  
 <body>  
-<h2>Struts 2 - Login Application</h2>  
+<h2>Development Environments | Jeanette Fairless</h2>  
 <s:actionerror />  
 <s:form action="login.action" method="post">  
-    <s:textfield name="username" key="label.username" size="20" />  
-    <s:password name="password" key="label.password" size="20" />  
+    <s:textfield name="devOS" key="label.devOS" size="20" />  
+    <s:textfield name="devOSVersion" key="label.devOSVersion" size="20" />  
+    <s:textfield name="devNotes" key="label.devNotes" size="40" />  
     <s:submit method="execute" key="label.login" align="center" />  
 </s:form>  
 </body>  

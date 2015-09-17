@@ -4,10 +4,20 @@
 <html>  
 <head>  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">  
-<title>Welcome</title>  
+<title>Current Development Environments</title>  
 </head>  
    
 <body>  
-    <h2>Hello Welcome , <s:property value="username" />...! Dineshonjava.com</h2>  
+	<h2>Development Environments</h2>
+	<ul>
+		<li>
+			OS:  <s:property value="devOS"></s:property>
+			<ul>
+				<li>OS Version:  <s:property value="devOSVersion"></s:property></li>
+				<li>OS Notes:  <s:property value="devNotes"></s:property></li>
+			</ul>
+		</li>
+	</ul>
+ 
 </body>  
 </html> 
