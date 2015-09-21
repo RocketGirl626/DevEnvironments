@@ -9,9 +9,20 @@
     <constant name="struts.custom.i18n.resources" value="myapp" />  
    
     <package name="default" extends="struts-default" namespace="/">  
-        <action name="login" class="com.dineshonjava.struts2.login.LoginAction">  
+        <action name="viewrecords" class="com.dineshonjava.struts2.login.FetchRecords">  
             <result name="success">Welcome.jsp</result>  
+        </action>
+        
+        <action name="all_results" class="com.dineshonjava.struts2.login.FetchRecords">
+            <result name="success">Welcome.jsp</result>  
+        </action>
+        
+         <action name="login" class="com.dineshonjava.struts2.login.LoginAction">  
+            <result name="success" type="redirectAction">all_results</result>  
             <result name="error">Login.jsp</result>  
-        </action>  
+        </action>
+
+        
+        
     </package>  
 </struts>  

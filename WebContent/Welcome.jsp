@@ -8,16 +8,19 @@
 </head>  
    
 <body>  
-	<h2>Development Environments</h2>
-	<ul>
-		<li>
-			OS:  <s:property value="devOS"></s:property>
-			<ul>
-				<li>OS Version:  <s:property value="devOSVersion"></s:property></li>
-				<li>OS Notes:  <s:property value="devNotes"></s:property></li>
-			</ul>
-		</li>
-	</ul>
- 
+	<h2>Development Environments | View All Records</h2>
+
+	<s:iterator  value="list">  
+		<fieldset>  
+			<s:property value="devOS"/><br/>  
+			<s:property value="devOSVersion"/><br/>  
+			<s:property value="devNotes"/><br/>    
+		</fieldset>  
+	</s:iterator>  
+	
+	
+	<a href="Login.jsp">Add a Record</a><br />
+	<a href="index.jsp">Home</a>
+	
 </body>  
 </html> 

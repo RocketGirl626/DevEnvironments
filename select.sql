@@ -1,1 +1,0 @@
-SELECT * FROM environments WHERE id = 2;

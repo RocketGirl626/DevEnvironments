@@ -1,1 +1,0 @@
-INSERT INTO environments VALUES ("2","Mac OS X","10.6","these are more notes");
