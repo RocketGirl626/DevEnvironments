@@ -1,5 +1,6 @@
 Application: Development Environments
 Author:  Jeanette Fairless
+GitHub:  https://github.com/RocketGirl626/devEnvironments
 
 Description:  This application uses the Struts2 framework to create a java application to insert and list
 development environment data using a MySQL database.  OS, Version, and Notes are the properties acted on, with 
