@@ -11,7 +11,7 @@
 	<body>  
 		<h2>Development Environments | Add a Record </h2>  
 		<s:actionerror />  
-		<s:form action="login.action" method="post" validate="true">  
+		<s:form action="login.action" method="post">  
 		    <s:textfield name="devOS" key="label.devOS" size="20" />  
 		    <s:textfield name="devOSVersion" key="label.devOSVersion" size="20" />  
 		    <s:textfield name="devNotes" key="label.devNotes" size="40" />  
