@@ -19,7 +19,7 @@
         
          <action name="login" class="com.dineshonjava.struts2.login.LoginAction">  
             <result name="success" type="redirectAction">all_results</result>  
-            <result name="error">Login.jsp</result>  
+            <result name="error">error.jsp</result>  
         </action>
 
         

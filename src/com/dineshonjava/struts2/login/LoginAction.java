@@ -33,12 +33,6 @@ public class LoginAction  extends ActionSupport{
 	 public void setDevNotes(String devNotes) {  
 		 this.devNotes = devNotes;  
 	 }  
-
-//	 public void validate() {
-//		 if (environment.getDevOS().length() == 0) {
-//			 addFieldError("environment.devOS", "OS is a required field");
-//		 }
-//	 }
 	
 	 public String execute() {  
 	 
