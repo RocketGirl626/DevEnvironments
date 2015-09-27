@@ -3,12 +3,12 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class FetchRecords {
-	ArrayList<Environment> list=new ArrayList<Environment>();
+	ArrayList<LoginAction> list=new ArrayList<LoginAction>();
 
-	public ArrayList<Environment> getList() {
+	public ArrayList<LoginAction> getList() {
 		return list;
 	}
-	public void setList(ArrayList<Environment> list) {
+	public void setList(ArrayList<LoginAction> list) {
 		this.list = list;
 	}
 
@@ -22,7 +22,7 @@ public class FetchRecords {
 			PreparedStatement ps=con.prepareStatement("select * from environments");
 			ResultSet rs=ps.executeQuery();
 			while(rs.next()){
-				Environment environment=new Environment();
+				LoginAction environment=new LoginAction();
 				environment.setDevOS(rs.getString(2));
 				environment.setDevOSVersion(rs.getString(3));
 				environment.setDevNotes(rs.getString(4));
